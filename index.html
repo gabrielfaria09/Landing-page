@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica médica com atendimento humanizado, especialidades integradas e agendamento facilitado.">
   <title>Clínica Aurora</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,10 +15,18 @@
         Clínica Aurora
       </a>
 
+      <input class="menu-toggle" type="checkbox" id="menu-toggle" aria-label="Abrir menu">
+      <label class="menu-button" for="menu-toggle" aria-label="Alternar menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
       <div class="nav-links">
         <a href="#especialidades">Especialidades</a>
         <a href="#equipe">Equipe</a>
         <a href="#contato">Contato</a>
+        <a class="mobile-action" href="#contato">Agendar consulta</a>
       </div>
 
       <a class="nav-action" href="#contato">Agendar consulta</a>
@@ -142,6 +148,7 @@
   <footer class="site-footer">
     <p>© 2026 Clínica Aurora. Todos os direitos reservados.</p>
     <p>Rua das Acácias, 120 - Centro</p>
+    <p>Feito por: Gabriel Alves Faria</p>
   </footer>
 </body>
 </html>
