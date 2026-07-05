@@ -3,25 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Clínica médica com atendimento humanizado, especialidades integradas e agendamento facilitado.">
-    <title>Clínica Médica Aurora</title>
+    <meta name="description" content="Clínica médica em Campinas com clínica geral, cardiologia e pediatria. Atendimento humanizado, agendamento rápido e estrutura moderna no Centro.">
+    <meta name="theme-color" content="#13c4a3">
+    <link rel="icon" href="SRC/IMAGES/FAVICON.png" type="image/png">
+    <link rel="apple-touch-icon" href="SRC/IMAGES/FAVICON.png">
+    <!-- Atualize a URL canônica ao publicar o site -->
+    <link rel="canonical" href="https://clinicaaurora.com.br/">
+    <title>Clínica Médica Aurora em Campinas | Agendamento e Especialidades</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Clínica Médica Aurora em Campinas">
+    <meta property="og:description" content="Atendimento humanizado com clínica geral, cardiologia e pediatria. Agende sua consulta pelo WhatsApp.">
+    <meta property="og:url" content="https://clinicaaurora.com.br/">
+    <meta property="og:image" content="https://clinicaaurora.com.br/SRC/IMAGES/IMAGEM-DA-EQUIPE.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Clínica Médica Aurora em Campinas">
+    <meta name="twitter:description" content="Atendimento humanizado com clínica geral, cardiologia e pediatria. Agende sua consulta pelo WhatsApp.">
+    <meta name="twitter:image" content="https://clinicaaurora.com.br/SRC/IMAGES/IMAGEM-DA-EQUIPE.jpg">
+
     <link rel="stylesheet" href="SRC/styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "Clínica Aurora",
+        "description": "Clínica médica multidisciplinar em Campinas com atendimento humanizado, clínica geral, cardiologia e pediatria.",
+        "url": "https://clinicaaurora.com.br/",
+        "image": "https://clinicaaurora.com.br/SRC/IMAGES/IMAGEM-DA-EQUIPE.jpg",
+        "telephone": "+55-19-98857-0715",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua das Acácias, 120",
+            "addressLocality": "Campinas",
+            "addressRegion": "SP",
+            "postalCode": "13010-000",
+            "addressCountry": "BR"
+        },
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:00",
+            "closes": "18:00"
+        }],
+        "medicalSpecialty": ["Clínica Geral", "Cardiologia", "Pediatria"],
+        "areaServed": {
+            "@type": "City",
+            "name": "Campinas"
+        }
+    }
+    </script>
 </head>
 <body>
 
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
     <header>
-        <nav>
+        <nav aria-label="Menu principal">
             <a class="brand" href="#">
-            <span class="brand-mark">+</span>
+                <span class="brand-mark" aria-hidden="true">+</span>
                 Clínica Aurora
             </a>
 
             <input class="menu-toggle" type="checkbox" id="menu-toggle">
-                <label class="menu-button" for="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
+            <label class="menu-button" for="menu-toggle" aria-label="Abrir menu de navegação">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
             <div class="nav">
                 <a href="#especialidades">Especialidades</a>
@@ -30,49 +81,49 @@
                 <a class="mobile-action" href="#contato">Agendar consulta</a>
             </div>
 
-                <a class="nav-action" href="#contato">Agendar consulta</a>
+            <a class="nav-action" href="#contato">Agendar consulta</a>
         </nav>
     </header>
 
-    <main>
+    <main id="conteudo">
         <section class="hero">
             <div class="hero-content">
-                <p class="Destaque">Cuidado integral para sua saúde</p>
-                <h1>Atendimento médico humanizado, preciso e acessível.</h1>
+                <p class="eyebrow">Cuidado integral para sua saúde</p>
+                <h1>Atendimento médico humanizado em Campinas.</h1>
                 <p class="hero-text">
-                Uma clínica multidisciplinar com estrutura moderna, equipe experiente
-                e foco em prevenção, diagnóstico e acompanhamento contínuo.
+                    Clínica multidisciplinar no Centro de Campinas, com estrutura moderna,
+                    equipe experiente e foco em prevenção, diagnóstico e acompanhamento contínuo.
                 </p>
 
                 <div class="hero-actions">
-                <a class="button primary" href="#contato">Marcar consulta</a>
-                <a class="button secondary" href="#especialidades">Ver especialidades</a>
+                    <a class="button primary" href="#contato">Marcar consulta</a>
+                    <a class="button secondary" href="#especialidades">Ver especialidades</a>
                 </div>
             </div>
 
             <div class="hero-card">
-                <div class="pulse-circle">
-                <span></span>
+                <div class="pulse-circle" aria-hidden="true">
+                    <span></span>
                 </div>
 
                 <div class="hero-card-content">
-                <p>Pronto atendimento com triagem eficiente</p>
-                <strong>Segunda a sábado</strong>
-                <span>Consultas presenciais e acompanhamento preventivo.</span>
+                    <p>Pronto atendimento com triagem eficiente</p>
+                    <strong>Segunda a sábado</strong>
+                    <span>Consultas presenciais e acompanhamento preventivo.</span>
                 </div>
             </div>
         </section>
 
-        <section class="status">
+        <section class="status" aria-label="Indicadores da clínica">
             <div>
                 <strong>12+</strong>
                 <span>especialidades</span>
             </div>
-             <div>
+            <div>
                 <strong>24h</strong>
                 <span>retorno em exames</span>
             </div>
-             <div>
+            <div>
                 <strong>87%</strong>
                 <span>satisfação dos pacientes</span>
             </div>
@@ -80,34 +131,34 @@
 
         <section id="especialidades">
             <div class="section-head">
-                <p class="Destaque">Especialidades</p>
+                <p class="eyebrow">Especialidades</p>
                 <h2>Assistência completa em um só lugar.</h2>
             </div>
 
-            <div class="Grid-template">
+            <div class="grid-template">
                 <article class="service-card">
-                <span class="service-icon">01</span>
-                <h3>Clínica geral</h3>
-                <p>Consultas de rotina, avaliação de sintomas e orientação para cuidado preventivo.</p>
+                    <span class="service-icon" aria-hidden="true">01</span>
+                    <h3>Clínica geral</h3>
+                    <p>Consultas de rotina, avaliação de sintomas e orientação para cuidado preventivo.</p>
                 </article>
 
-                <article  class="service-card">
-                <span class="service-icon">02</span>
-                <h3>Cardiologia</h3>
-                <p>Acompanhamento cardiovascular, check-ups e investigação de fatores de risco.</p>
+                <article class="service-card">
+                    <span class="service-icon" aria-hidden="true">02</span>
+                    <h3>Cardiologia</h3>
+                    <p>Acompanhamento cardiovascular, check-ups e investigação de fatores de risco.</p>
                 </article>
 
-                <article  class="service-card">
-                <span class="service-icon">03</span>
-                <h3>Pediatria</h3>
-                <p>Cuidado próximo para crianças e adolescentes, do desenvolvimento à prevenção.</p>
+                <article class="service-card">
+                    <span class="service-icon" aria-hidden="true">03</span>
+                    <h3>Pediatria</h3>
+                    <p>Cuidado próximo para crianças e adolescentes, do desenvolvimento à prevenção.</p>
                 </article>
             </div>
         </section>
 
         <section class="split-section" id="equipe">
             <div>
-                <p class="Destaque">Nossa equipe</p>
+                <p class="eyebrow">Nossa equipe</p>
                 <h2>Profissionais atentos a cada etapa do atendimento.</h2>
             </div>
             <p>
@@ -116,37 +167,43 @@
                 condutas baseadas em evidências.
             </p>
 
-            <div class="imagem">
-                <img src="SRC/IMAGES/IMAGEM-DA-EQUIPE.jpg">
+            <div class="team-image">
+                <img
+                    src="SRC/IMAGES/IMAGEM-DA-EQUIPE.jpg"
+                    alt="Equipe médica da Clínica Aurora em Campinas"
+                    width="550"
+                    height="400"
+                    loading="lazy"
+                    decoding="async">
             </div>
         </section>
 
-         <section class="split-section" id="contato">
+        <section class="split-section" id="contato">
             <div>
-                <p class="Destaque">Agendamento</p>
+                <p class="eyebrow">Agendamento</p>
                 <h2>Comece seu cuidado hoje.</h2>
                 <p>Fale com a nossa equipe para encontrar o melhor horário e especialidade.</p>
+                <p class="contact-phone">
+                    <a href="tel:+5519988570715">(19) 98857-0715</a>
+                </p>
             </div>
 
-            <form class="contact-form">
-                <label>
-                Nome
-                <input type="text" name="name" placeholder="Seu nome">
-                </label>
-                <label>
-                Telefone
-                <input type="tel" name="phone" placeholder="(00) 00000-0000">
-                </label>
-                <label>
-                Especialidade
-                <select name="specialty">
-                    <option value="" disabled selected>Especialidade</option>
-                    <option>Clínica geral</option>
-                    <option>Cardiologia</option>
-                    <option>Pediatria</option>
-                    <option>Outra especialidade</option>
+            <form class="contact-form" id="contact-form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required autocomplete="name">
+
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required autocomplete="tel">
+
+                <label for="specialty">Especialidade</label>
+                <select id="specialty" name="specialty" required>
+                    <option value="" disabled selected>Selecione a especialidade</option>
+                    <option value="Clínica geral">Clínica geral</option>
+                    <option value="Cardiologia">Cardiologia</option>
+                    <option value="Pediatria">Pediatria</option>
+                    <option value="Outra especialidade">Outra especialidade</option>
                 </select>
-                </label>
+
                 <button type="submit" class="btn-submit">Solicitar agendamento</button>
             </form>
         </section>
@@ -154,20 +211,28 @@
 
     <footer>
         <p>© 2026 Clínica Aurora. Todos os direitos reservados.</p>
-        <p>Rua das Acácias, 120 - Centro</p>
+        <p>Rua das Acácias, 120 — Centro, Campinas - SP</p>
         <p>Feito por: Gabriel Alves Faria</p>
     </footer>
 
+    <a class="whatsapp-float" href="https://wa.me/5519988570715?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20na%20Cl%C3%ADnica%20Aurora." target="_blank" rel="noopener noreferrer" aria-label="Agendar consulta pelo WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.884 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            const form = event.target;
+            const nome = form.name.value.trim();
+            const tel = form.phone.value.trim();
+            const especialidade = form.specialty.value;
+            const msg = encodeURIComponent(
+                `Olá! Gostaria de realizar um agendamento na Clínica Aurora.\n\n*Nome:* ${nome}\n*Telefone:* ${tel}\n*Especialidade:* ${especialidade}\n\nAguardo confirmação!`
+            );
+            window.open(`https://wa.me/5519988570715?text=${msg}`, '_blank', 'noopener');
+        });
+    </script>
 </body>
-
-<script>
-  document.querySelector('.btn-submit').addEventListener('click', () => {
-    const nome = document.querySelector('input[placeholder="Seu nome"]').value || 'não informado';
-    const tel = document.querySelector('input[type="tel"]').value || 'não informado';
-    const especialidade= document.querySelectorAll('select')[0].value;
-
-    const msg = `Olá! Gostaria de realizar um agendamento na Clínica Aurora.%0A%0A*Nome:* ${nome}%0A*Especialidade:* ${especialidade}%0A%0AAguardo confirmação!`;
-    window.open(`https://wa.me/5519988570715?text=${msg}`, '_blank');
-  });
-</script>
 </html>
